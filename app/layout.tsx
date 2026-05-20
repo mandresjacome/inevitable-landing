@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://inevitable-landing.vercel.app';
 
 export const metadata: Metadata = {
-  title: "Inevitable • Álbum del Día del Padre 2026 - Mundial de Fútbol",
+  title: "Inevitable • Álbum del Día del Padre 2026",
   description: "Sorprende a papá con el Álbum Oficial de tu Familia temática Copa Mundial 2026. Entregas en Bucaramanga. O compra la plantilla digital para tu emprendimiento. 29 láminas personalizadas.",
   keywords: ["día del padre", "álbum personalizado", "mundial 2026", "regalo papá", "papelería creativa", "bucaramanga", "plantilla canva", "emprendimiento"],
   authors: [{ name: "Inevitable" }],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "es_CO",
     url: siteUrl,
     siteName: "Inevitable",
-    title: "Álbum del Día del Padre 2026 • Temática Mundial de Fútbol",
+    title: "Inevitable • Álbum del Día del Padre 2026",
     description: "El regalo perfecto para papá: 22 láminas personalizadas con tu familia + momentos históricos del fútbol. Entregas en Bucaramanga y Área Metropolitana.",
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Álbum del Día del Padre 2026 • Temática Mundial de Fútbol",
+    title: "Inevitable • Álbum del Día del Padre 2026",
     description: "Sorprende a papá con un álbum personalizado con tu familia. 29 láminas únicas.",
     images: ["/og-image.jpg"],
   },
