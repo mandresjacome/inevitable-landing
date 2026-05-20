@@ -8,9 +8,9 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid Principal */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12 text-center md:text-left">
           {/* Columna 1: Marca */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <Image
               src="/images/inevitable-logo.png"
               alt="Inevitable - Papelería Creativa"
@@ -82,9 +82,9 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-4">
             {/* Copyright */}
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm text-center">
               © {currentYear} Inevitable. Todos los derechos reservados.
             </p>
           </div>
