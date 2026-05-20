@@ -5,7 +5,7 @@ export default function DigitalTemplate() {
   const includes = [
     {
       icon: '📦',
-      title: 'Plantilla completa del álbum (29 láminas)',
+      title: 'Sistema de plantillas completo del álbum (plantilla álbum + 3 plantillas base para 29 láminas)',
       highlight: false,
     },
     {
