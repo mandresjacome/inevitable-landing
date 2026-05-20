@@ -3,46 +3,43 @@ import { CONFIG } from '@/lib/constants';
 
 export default function AboutUs() {
   return (
-    <section id="nosotros" className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section id="nosotros" className="py-16 sm:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-brand-teal/10 rounded-full px-4 py-2 mb-4">
-            <span className="text-brand-teal text-sm font-semibold uppercase tracking-wide">
+        
+        {/* Header limpio */}
+        <div className="max-w-4xl mb-16">
+          <div className="inline-flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2 mb-6">
+            <span className="text-gray-700 text-xs sm:text-sm font-bold uppercase tracking-wide">
               Nuestra Historia
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Más que plantillas, diseñamos
-            <br />
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+            Más que plantillas, diseñamos{' '}
             <span className="text-brand-teal">momentos inevitables</span> ✨
           </h2>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 leading-relaxed">
             Llevamos años creando recuerdos reales con nuestras manos.
-            <br />
-            Hoy, queremos ayudarte a hacer lo mismo.
+            {' '}Hoy, queremos ayudarte a hacer lo mismo.
           </p>
         </div>
 
-        {/* Copy Principal */}
+        {/* Copy Principal - Más limpio */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8 sm:p-12 border-l-4 border-brand-pink">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Durante el último año, decidimos <strong>dejar nuestras redes en pausa</strong> porque hemos estado
-              con las manos llenas en el taller en Bucaramanga, diseñando e imprimiendo.
+          <div className="bg-gray-50 rounded-2xl p-8 sm:p-12 border-l-4 border-brand-pink">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
+              Este último año ha sido intenso. La vida nos llevó por caminos inesperados, pero <strong>la papelería creativa nunca paró</strong>. Cada pedido, cada detalle, cada sonrisa de nuestros clientes nos recordaba por qué hacemos esto.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Ahora, compartimos <span className="font-semibold text-brand-teal">las mismas plantillas que nosotros usamos para facturar</span>.
-              No es un archivo digital improvisado, es un <strong className="text-brand-pink">producto probado</strong>.
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              Trabajamos desde casa, <span className="font-semibold text-brand-teal">con pasión y dedicación en cada diseño</span>. No tenemos un gran taller, pero tenemos algo mejor: el amor por lo que hacemos. Ahora queremos compartir las plantillas que nos han funcionado, para que tú también puedas <strong className="text-brand-pink">crear momentos inevitables</strong>.
             </p>
           </div>
         </div>
 
-        {/* Perfiles del Equipo */}
+        {/* Perfiles del Equipo - Más minimalistas */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
           {/* Perfil Anny */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <div className="relative h-80 bg-gradient-to-br from-brand-pink/20 to-brand-teal/20">
+          <div className="bg-gray-50 rounded-2xl overflow-hidden">
+            <div className="relative h-80 bg-gradient-to-br from-brand-pink/10 to-brand-teal/10">
               {/* Placeholder - Reemplazar con foto de Anny */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
@@ -65,9 +62,9 @@ export default function AboutUs() {
             </div>
             <div className="p-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Anny</h3>
-              <p className="text-brand-pink font-semibold mb-3">Fundadora y Mente Creativa</p>
+              <p className="text-brand-pink font-semibold mb-3">Soñadora, Fundadora y Creadora</p>
               <p className="text-gray-600 leading-relaxed">
-                La perfeccionista detrás de cada diseño y detalle. Si algo no está perfecto, no sale del taller.
+                El corazón de Inevitable. La perfeccionista detrás de cada diseño y detalle. Si algo no está perfecto, no sale del taller.
               </p>
             </div>
           </div>
@@ -97,42 +94,11 @@ export default function AboutUs() {
             </div>
             <div className="p-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Mario</h3>
-              <p className="text-brand-teal font-semibold mb-3">Gestión y Soporte al Emprendedor</p>
+              <p className="text-brand-teal font-semibold mb-3">Marketing y Soporte al Emprendedor</p>
               <p className="text-gray-600 leading-relaxed">
-                El encargado de que todo funcione y de dar soporte a quienes compran las plantillas.
+                Llegó a la vida de Inevitable y se enamoró del proyecto. Se encarga del marketing y de dar soporte a quienes compran las plantillas.
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* Galería del Taller */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
-            Fotos reales de nuestro taller en Piedecuesta
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3].map((num) => (
-              <div key={num} className="relative aspect-square bg-gray-100 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-                {/* Placeholder - Reemplazar con fotos del taller */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-5xl mb-2">📸</div>
-                    <p className="text-gray-600 text-sm">
-                      Foto {num} del taller
-                    </p>
-                  </div>
-                </div>
-                {/* Cuando tengas las imágenes:
-                <Image
-                  src={`/images/taller-${num}.webp`}
-                  alt={`Taller Inevitable ${num}`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                */}
-              </div>
-            ))}
           </div>
         </div>
 

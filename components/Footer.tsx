@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid Principal */}
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Columna 1: Marca */}
           <div>
             <Image
@@ -16,10 +16,10 @@ export default function Footer() {
               alt="Inevitable - Papelería Creativa"
               width={280}
               height={168}
-              className="mb-4 w-full max-w-[200px] sm:max-w-[250px] h-auto"
+              className="mb-6 w-full max-w-[180px] sm:max-w-[220px] h-auto brightness-0 invert"
               priority={false}
             />
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-6 text-sm leading-relaxed">
               Papelería Creativa desde Piedecuesta, Colombia. Diseñamos momentos inevitables.
             </p>
             <a
@@ -57,24 +57,24 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Columna 3: Políticas */}
+          {/* Columna 3: Información */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Información Legal</h4>
+            <h4 className="text-lg font-semibold mb-4">Información</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <strong className="text-white">Entregas físicas:</strong>
                 <br />
-                Solo en {CONFIG.zonasEntrega.slice(0, 2).join(', ')}, {CONFIG.zonasEntrega.slice(2).join(' y ')}.
+                Solo en Bucaramanga y área metropolitana.
               </li>
               <li className="mt-4">
                 <strong className="text-white">Plantillas digitales:</strong>
                 <br />
-                Envío instantáneo por correo electrónico tras el pago.
+                Entrega instantánea por enlace de Canva.
               </li>
               <li className="mt-4">
                 <strong className="text-white">Soporte:</strong>
                 <br />
-                WhatsApp disponible para consultas sobre las plantillas.
+                WhatsApp para consultas sobre las plantillas.
               </li>
             </ul>
           </div>
@@ -87,13 +87,6 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               © {currentYear} Inevitable. Todos los derechos reservados.
             </p>
-
-            {/* Links Legales (opcional para futuro) */}
-            <div className="flex gap-4 text-sm text-gray-400">
-              <span>Términos y Condiciones</span>
-              <span>•</span>
-              <span>Política de Privacidad</span>
-            </div>
           </div>
         </div>
 

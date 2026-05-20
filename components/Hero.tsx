@@ -2,89 +2,108 @@ import CountdownTimer from './CountdownTimer';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Degradado de fondo con colores de marca */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-800">
-        <div className="absolute inset-0 bg-[url('/images/soccer-pattern.svg')] opacity-5" />
-      </div>
-      
-      {/* Overlay con efectos de luz */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-teal/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-pink/20 rounded-full blur-3xl" />
-      
-      {/* Contenido */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-        {/* Badge del Mundial 2026 */}
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
-          <span className="text-2xl">⚽</span>
-          <span className="text-white text-sm font-medium">FIFA World Cup 2026 Edition</span>
-        </div>
-        
-        {/* Título Principal */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight px-2">
-          ¡El Mundial 2026 se respira en el aire
-          <br className="hidden sm:block" />
-          <span className="sm:inline"> </span>y <span className="text-brand-teal">Papá es el capitán</span> del equipo!
-        </h1>
-        
-        {/* Subtítulo */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto px-4">
-          Este Día del Padre, sorpréndelo con el <span className="font-semibold text-brand-pink">Álbum Oficial de tu Familia</span>
-          {' '}o <span className="font-semibold text-brand-teal">factura en grande</span> vendiéndolo en tu emprendimiento.
-        </p>
-        
-        {/* Countdown Timer */}
-        <div className="mb-12">
-          <p className="text-white text-sm uppercase tracking-wider mb-4 font-medium">
-            Cuenta regresiva al Día del Padre 🏆
-          </p>
-          <CountdownTimer />
-        </div>
-        
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-3xl mx-auto px-4">
-          {/* CTA B2C */}
-          <a
-            href="#album-fisico"
-            className="group relative w-full sm:w-auto px-6 py-5 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
-          >
-            <span className="flex items-center justify-center gap-2">
-              <span className="text-xl">🏠</span>
-              <span>Quiero el Álbum Físico</span>
-            </span>
-            <span className="block text-xs text-white/90 mt-1.5">
-              (Bucaramanga y Área Metropolitana)
-            </span>
-          </a>
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#F5F3F0]">
+      {/* Contenedor principal */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
-          {/* CTA B2B */}
-          <a
-            href="#plantilla-digital"
-            className="group relative w-full sm:w-auto px-6 py-5 bg-gradient-to-r from-violet-600 to-brand-pink text-white rounded-xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
-          >
-            <span className="flex items-center justify-center gap-2">
-              <span className="text-xl">💼</span>
-              <span className="leading-tight">Soy Emprendedor:<br className="sm:hidden" /> Quiero la Plantilla</span>
-            </span>
-            <span className="block text-xs text-white/90 mt-1.5">
-              (Vende en todo el mundo)
-            </span>
-          </a>
-        </div>
-        
-        {/* Scroll indicator */}
-        <div className="mt-16 animate-bounce">
-          <svg
-            className="w-6 h-6 mx-auto text-white/60"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
+          {/* COLUMNA IZQUIERDA - Texto y CTAs */}
+          <div className="order-2 lg:order-1 space-y-6 sm:space-y-8">
+
+            {/* Título con palabras destacadas */}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+              Sorprende a{' '}
+              <span className="text-brand-teal">PAPÁ</span>
+              {' '}con el álbum que hará{' '}
+              <span className="text-brand-pink">INEVITABLE</span>
+              {' '}su sonrisa
+            </h1>
+
+            {/* Descripción */}
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl">
+              Este Día del Padre 2026, celebra con un álbum personalizado temática Copa Mundial.
+              22 láminas con tu familia + momentos históricos del fútbol.
+            </p>
+
+            {/* Countdown compacto */}
+            <div className="py-4">
+              <p className="text-sm text-gray-500 uppercase tracking-wide mb-3 font-semibold">
+                Cuenta regresiva 🏆
+              </p>
+              <CountdownTimer />
+            </div>
+
+            {/* CTAs - Botones orgánicos */}
+            <div className="flex flex-col sm:flex-row gap-3 pt-4">
+              <a
+                href="#album-fisico"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#15803D] hover:bg-[#166534] text-white font-bold rounded-full shadow-md hover:shadow-lg transition-all duration-300 text-base"
+              >
+                Quiero el Álbum
+              </a>
+              
+              <a
+                href="#plantilla-digital"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-full shadow-md hover:shadow-lg transition-all duration-300 border-2 border-gray-900 text-base"
+              >
+                Soy Emprendedor
+              </a>
+            </div>
+
+            {/* Info rápida */}
+            <div className="flex flex-wrap gap-6 pt-4 text-sm text-gray-600">
+              <div>
+                <div className="font-bold text-2xl text-brand-teal">29</div>
+                <div className="text-xs">Láminas incluidas</div>
+              </div>
+              <div>
+                <div className="font-bold text-2xl text-brand-pink">100%</div>
+                <div className="text-xs">Personalizado</div>
+              </div>
+              <div>
+                <div className="font-bold text-2xl text-gray-900">7 días</div>
+                <div className="text-xs">Entrega hábiles</div>
+              </div>
+            </div>
+          </div>
+
+          {/* COLUMNA DERECHA - Imagen dominante */}
+          <div className="order-1 lg:order-2 relative">
+            <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+              {/* Placeholder - cuando tengas la foto real */}
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-100 via-green-50 to-amber-50 flex items-center justify-center p-8">
+                <div className="text-center">
+                  <div className="text-6xl mb-4">📸</div>
+                  <p className="text-gray-700 font-bold text-xl mb-2">
+                    Foto del Álbum Físico
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    Aquí irá la foto real del álbum<br />dominando toda esta sección
+                  </p>
+                </div>
+              </div>
+              
+              {/* Cuando tengas la imagen real, reemplaza el div de arriba con esto:
+              <Image
+                src="/images/album-fisico-hero.webp"
+                alt="Álbum del Día del Padre - Inevitable"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
+              */}
+            </div>
+
+            {/* Badge circular flotante estilo "With love" */}
+            <div className="absolute top-4 right-4 bg-white rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shadow-lg border-2 border-gray-900">
+              <div className="text-center">
+                <div className="text-xs font-bold text-gray-900">HECHO</div>
+                <div className="text-xs font-bold text-gray-900">CON ❤️</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

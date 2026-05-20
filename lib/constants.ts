@@ -3,16 +3,14 @@
 
 export const CONFIG = {
   // WhatsApp
-  whatsappNumber: 'NUMERO_WHATSAPP', // ⚠️ Reemplazar con formato internacional sin +: ej. '573001234567'
+  whatsappNumber: '573159288237',
   whatsappMessageAlbum: encodeURIComponent('Hola, quiero pedir el Álbum Físico del Día del Padre 🏆'),
+  whatsappMessagePlantilla: encodeURIComponent('Hola, quiero comprar el Paquete de Diseños Digital ($6 USD)'),
   whatsappMessageSoporte: encodeURIComponent('Hola, tengo una duda sobre la plantilla de Canva'),
   
-  // Pasarela de Pago
-  paymentLink: 'LINK_PASARELA_PAGO', // ⚠️ Reemplazar con link de Hotmart/MercadoPago/PayU
-  
   // Precios
-  precioAlbum: 'PRECIO_ALBUM_FISICO',       // ⚠️ Reemplazar: ej. '$55.000 COP'
-  precioPlantilla: 'PRECIO_PLANTILLA_DIGITAL', // ⚠️ Reemplazar: ej. '$35.000 COP'
+  precioAlbum: 'Por definir',
+  precioPlantilla: '$6 USD',
   
   // Redes Sociales
   instagram: 'https://instagram.com/inevitable0508',
@@ -44,9 +42,6 @@ export const getWhatsAppLink = (message?: string) => {
 export const hasPlaceholders = () => {
   return (
     CONFIG.whatsappNumber.includes('NUMERO') ||
-    CONFIG.paymentLink.includes('LINK') ||
-    CONFIG.precioAlbum.includes('PRECIO') ||
-    CONFIG.precioPlantilla.includes('PRECIO') ||
     CONFIG.metaPixelId.includes('META') ||
     CONFIG.ga4MeasurementId.includes('GA4')
   );

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { CONFIG } from '@/lib/constants';
+import { CONFIG, getWhatsAppLink } from '@/lib/constants';
 
 export default function DigitalTemplate() {
   const includes = [
@@ -9,18 +9,18 @@ export default function DigitalTemplate() {
       highlight: false,
     },
     {
-      icon: '🎨',
-      title: 'Diseño del empaque/sobre y la "Extra Sticker"',
+      icon: '✏️',
+      title: '100% editable en Canva gratuito (Drag & Drop)',
       highlight: false,
     },
     {
-      icon: '✏️',
-      title: '100% editable en Canva gratuito (Drag & Drop)',
-      highlight: true,
+      icon: '🎁',
+      title: 'Plantilla versión 2025 de REGALO',
+      highlight: false,
     },
     {
-      icon: '🎁',
-      title: 'SÚPER BONO: Plantilla versión 2025 de REGALO',
+      icon: '✨',
+      title: 'SÚPER BONO: Diseños del combo completo (ej: sobre, mug, cuadro, fixture, etc.) según se defina',
       highlight: true,
     },
   ];
@@ -49,35 +49,38 @@ export default function DigitalTemplate() {
   ];
 
   return (
-    <section id="plantilla-digital" className="py-20 bg-gradient-to-br from-violet-50 via-pink-50 to-white">
+    <section id="plantilla-digital" className="py-16 sm:py-24 bg-[#F5F3F0]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-violet-100 rounded-full px-4 py-2 mb-4">
-            <span className="text-violet-600 text-sm font-semibold uppercase tracking-wide">
+        
+        {/* Header limpio */}
+        <div className="max-w-4xl mb-16">
+          <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 mb-6 shadow-sm">
+            <span className="text-gray-700 text-xs sm:text-sm font-bold uppercase tracking-wide">
               Para Emprendedores • Global 🌍
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 px-4">
-            ¡Factura en grande este <span className="text-violet-600">Día del Padre</span> con el producto
-            <span className="text-brand-pink"> estrella de la temporada!</span> 🚀
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+            Factura en grande este{' '}
+            <span className="text-brand-pink">Día del Padre</span>
+            {' '}con el producto{' '}
+            <span className="text-brand-teal">estrella de la temporada</span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4">
-            La temática futbolera va a ser <strong>la más pedida</strong>. ¡No pierdas horas diseñando desde cero!
+          <p className="text-lg text-gray-600 leading-relaxed">
+            La temática futbolera va a ser <strong className="text-gray-900">la más pedida</strong>. ¡No pierdas horas diseñando desde cero!
             {' '}Adquiere nuestra plantilla oficial 100% editable en Canva y empieza a vender hoy mismo.
           </p>
         </div>
 
-        {/* Beneficios Grid */}
+        {/* Beneficios Grid - Más limpio */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="text-center p-6 bg-white rounded-2xl"
             >
-              <div className="text-5xl mb-4">{benefit.emoji}</div>
-              <h3 className="font-bold text-gray-900 mb-2">{benefit.title}</h3>
-              <p className="text-sm text-gray-600">{benefit.description}</p>
+              <div className="text-4xl mb-3">{benefit.emoji}</div>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">{benefit.title}</h3>
+              <p className="text-xs text-gray-600">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -108,12 +111,12 @@ export default function DigitalTemplate() {
             ))}
 
             {/* Garantía */}
-            <div className="bg-gradient-to-r from-brand-teal to-brand-pink p-6 rounded-xl text-white">
+            <div className="bg-gray-50 border-2 border-gray-900 p-6 rounded-xl">
               <div className="flex items-start gap-4">
                 <div className="text-4xl flex-shrink-0">✅</div>
                 <div>
-                  <h4 className="font-bold text-xl mb-2">Garantía Inevitable</h4>
-                  <p className="text-white/90">
+                  <h4 className="font-bold text-xl mb-2 text-gray-900">Garantía Inevitable</h4>
+                  <p className="text-gray-700">
                     Soporte directo por WhatsApp si tienes dudas usando Canva. No te dejamos sol@.
                   </p>
                 </div>
@@ -161,24 +164,24 @@ export default function DigitalTemplate() {
 
         {/* Precio y CTA */}
         <div className="text-center px-4">
-          <div className="mb-6">
-            <p className="text-gray-600 text-base sm:text-lg mb-2">Inversión para tu negocio:</p>
-            <p className="text-4xl sm:text-5xl font-bold text-violet-600">{CONFIG.precioPlantilla}</p>
-            <p className="text-sm text-gray-500 mt-2">Pago único • Acceso inmediato</p>
+          <div className="mb-8">
+            <p className="text-gray-600 text-sm sm:text-base mb-2 font-medium">Inversión para tu negocio:</p>
+            <p className="text-4xl sm:text-5xl font-bold text-gray-900">{CONFIG.precioPlantilla}</p>
+            <p className="text-sm text-gray-500 mt-2">Pago único • Acceso inmediato por Canva</p>
           </div>
           
           <a
-            href={CONFIG.paymentLink}
+            href={getWhatsAppLink(CONFIG.whatsappMessagePlantilla)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 sm:px-10 py-5 bg-gradient-to-r from-violet-600 to-brand-pink hover:from-violet-700 hover:to-pink-600 text-white text-lg sm:text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 w-full sm:w-auto justify-center"
+            className="inline-flex items-center gap-3 px-10 py-5 bg-[#25D366] hover:bg-[#20BA5A] text-white text-lg font-bold rounded-full shadow-md hover:shadow-lg transition-all duration-300 w-full sm:w-auto justify-center"
           >
-            <span className="text-xl">💳</span>
-            <span>Comprar Plantilla Ahora</span>
+            <span className="text-xl">📱</span>
+            <span>Comprar por WhatsApp</span>
           </a>
           
-          <p className="text-sm text-gray-500 mt-4">
-            Pago 100% seguro • Entrega instantánea por correo electrónico
+          <p className="text-xs text-gray-500 mt-4 max-w-md mx-auto">
+            🇨🇴 Colombia: Pago por llave bre-b • 🌎 Internacional: PayPal
           </p>
         </div>
       </div>

@@ -80,9 +80,6 @@ export default function CountdownTimer() {
               {unit.label}
             </div>
           </div>
-          {index < timeUnits.length - 1 && (
-            <div className="hidden sm:block text-3xl font-bold text-white mx-2">:</div>
-          )}
         </div>
       ))}
     </div>
