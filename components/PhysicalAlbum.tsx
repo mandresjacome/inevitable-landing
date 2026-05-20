@@ -141,7 +141,7 @@ export default function PhysicalAlbum() {
             <span>Pedir por WhatsApp</span>
           </a>
           <p className="text-sm text-gray-500 mt-4">
-            Respuesta rápida • Entregas en 24-48 horas
+            Respuesta rápida • Entregas en 7 días hábiles
           </p>
         </div>
       </div>
