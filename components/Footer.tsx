@@ -16,7 +16,7 @@ export default function Footer() {
               alt="Inevitable - Papelería Creativa"
               width={280}
               height={168}
-              className="mb-4"
+              className="mb-4 w-full max-w-[200px] sm:max-w-[250px] h-auto"
               priority={false}
             />
             <p className="text-gray-400 mb-4">

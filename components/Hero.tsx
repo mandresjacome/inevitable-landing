@@ -21,14 +21,14 @@ export default function Hero() {
         </div>
         
         {/* Título Principal */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight px-2">
           ¡El Mundial 2026 se respira en el aire
-          <br />
-          y <span className="text-brand-teal">Papá es el capitán</span> del equipo!
+          <br className="hidden sm:block" />
+          <span className="sm:inline"> </span>y <span className="text-brand-teal">Papá es el capitán</span> del equipo!
         </h1>
         
         {/* Subtítulo */}
-        <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto px-4">
           Este Día del Padre, sorpréndelo con el <span className="font-semibold text-brand-pink">Álbum Oficial de tu Familia</span>
           {' '}o <span className="font-semibold text-brand-teal">factura en grande</span> vendiéndolo en tu emprendimiento.
         </p>
@@ -42,17 +42,17 @@ export default function Hero() {
         </div>
         
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-3xl mx-auto">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-3xl mx-auto px-4">
           {/* CTA B2C */}
           <a
             href="#album-fisico"
-            className="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="group relative w-full sm:w-auto px-6 py-5 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
           >
             <span className="flex items-center justify-center gap-2">
-              <span>🏠</span>
+              <span className="text-xl">🏠</span>
               <span>Quiero el Álbum Físico</span>
             </span>
-            <span className="block text-xs text-white/90 mt-1">
+            <span className="block text-xs text-white/90 mt-1.5">
               (Bucaramanga y Área Metropolitana)
             </span>
           </a>
@@ -60,13 +60,13 @@ export default function Hero() {
           {/* CTA B2B */}
           <a
             href="#plantilla-digital"
-            className="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-violet-600 to-brand-pink text-white rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="group relative w-full sm:w-auto px-6 py-5 bg-gradient-to-r from-violet-600 to-brand-pink text-white rounded-xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
           >
             <span className="flex items-center justify-center gap-2">
-              <span>💼</span>
-              <span>Soy Emprendedor: Quiero la Plantilla</span>
+              <span className="text-xl">💼</span>
+              <span className="leading-tight">Soy Emprendedor:<br className="sm:hidden" /> Quiero la Plantilla</span>
             </span>
-            <span className="block text-xs text-white/90 mt-1">
+            <span className="block text-xs text-white/90 mt-1.5">
               (Vende en todo el mundo)
             </span>
           </a>

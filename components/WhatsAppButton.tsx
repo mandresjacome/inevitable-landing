@@ -9,11 +9,11 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
-      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 group"
+      className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 sm:p-5 shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 group"
     >
       {/* Icono de WhatsApp SVG */}
       <svg
-        className="w-7 h-7"
+        className="w-6 h-6 sm:w-7 sm:h-7"
         fill="currentColor"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"

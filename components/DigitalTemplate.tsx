@@ -58,11 +58,11 @@ export default function DigitalTemplate() {
               Para Emprendedores • Global 🌍
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 px-4">
             ¡Factura en grande este <span className="text-violet-600">Día del Padre</span> con el producto
             <span className="text-brand-pink"> estrella de la temporada!</span> 🚀
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4">
             La temática futbolera va a ser <strong>la más pedida</strong>. ¡No pierdas horas diseñando desde cero!
             {' '}Adquiere nuestra plantilla oficial 100% editable en Canva y empieza a vender hoy mismo.
           </p>
@@ -160,10 +160,10 @@ export default function DigitalTemplate() {
         </div>
 
         {/* Precio y CTA */}
-        <div className="text-center">
+        <div className="text-center px-4">
           <div className="mb-6">
-            <p className="text-gray-600 text-lg mb-2">Inversión para tu negocio:</p>
-            <p className="text-5xl font-bold text-violet-600">{CONFIG.precioPlantilla}</p>
+            <p className="text-gray-600 text-base sm:text-lg mb-2">Inversión para tu negocio:</p>
+            <p className="text-4xl sm:text-5xl font-bold text-violet-600">{CONFIG.precioPlantilla}</p>
             <p className="text-sm text-gray-500 mt-2">Pago único • Acceso inmediato</p>
           </div>
           
@@ -171,9 +171,9 @@ export default function DigitalTemplate() {
             href={CONFIG.paymentLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-violet-600 to-brand-pink hover:from-violet-700 hover:to-pink-600 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center gap-3 px-8 sm:px-10 py-5 bg-gradient-to-r from-violet-600 to-brand-pink hover:from-violet-700 hover:to-pink-600 text-white text-lg sm:text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 w-full sm:w-auto justify-center"
           >
-            <span>💳</span>
+            <span className="text-xl">💳</span>
             <span>Comprar Plantilla Ahora</span>
           </a>
           
