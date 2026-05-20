@@ -12,10 +12,10 @@ export default function Footer() {
           {/* Columna 1: Marca */}
           <div>
             <Image
-              src="/images/inevitable-logo.svg"
+              src="/images/inevitable-logo.png"
               alt="Inevitable - Papelería Creativa"
-              width={250}
-              height={100}
+              width={280}
+              height={168}
               className="mb-4"
               priority={false}
             />
