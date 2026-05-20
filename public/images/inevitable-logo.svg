@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 768" width="1280" height="768">
+  <!-- Avioncito rosa -->
+  <path d="M740 50 L1013 127 L804 225 L812 169 L678 249 L694 281 L804 225 L740 50 Z" 
+        fill="#f39dbe" stroke="#f39dbe" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M740 50 L1013 127 L804 225" 
+        fill="none" stroke="#f39dbe" stroke-width="3"/>
+  
+  <!-- Trazos del avioncito -->
+  <path d="M203 149 Q337 279 356 329" 
+        stroke="#f39dbe" stroke-width="8" stroke-dasharray="15,15" fill="none" stroke-linecap="round"/>
+  <circle cx="349" cy="305" r="18" fill="none" stroke="#f39dbe" stroke-width="8"/>
+  <path d="M466 309 Q491 339 506 369" 
+        stroke="#f39dbe" stroke-width="8" stroke-dasharray="15,15" fill="none" stroke-linecap="round"/>
+  <circle cx="520" cy="389" r="18" fill="none" stroke="#f39dbe" stroke-width="8"/>
+  <path d="M580 395 Q650 355 804 225" 
+        stroke="#f39dbe" stroke-width="8" stroke-dasharray="15,15" fill="none" stroke-linecap="round"/>
+  
+  <!-- Texto "Inevitable" en teal/turquesa -->
+  <text x="10" y="600" font-family="'Brush Script MT', 'Lucida Handwriting', cursive" 
+        font-size="280" fill="#75c9be" font-weight="bold" style="font-style: italic;">
+    Inevitable
+  </text>
+  
+  <!-- Corazoncito izquierdo -->
+  <path d="M125 685 Q125 665 145 665 Q165 665 165 685 Q165 715 125 735 Q85 715 85 685 Q85 665 105 665 Q125 665 125 685 Z" 
+        fill="#f39dbe"/>
+  
+  <!-- Texto "Papelería Creativa" en rosa -->
+  <text x="167" y="730" font-family="'Arial', sans-serif" 
+        font-size="95" fill="#f39dbe" font-weight="300" letter-spacing="2">
+    Papelería Creativa
+  </text>
+  
+  <!-- Corazoncito derecho -->
+  <path d="M1145 685 Q1145 665 1165 665 Q1185 665 1185 685 Q1185 715 1145 735 Q1105 715 1105 685 Q1105 665 1125 665 Q1145 665 1145 685 Z" 
+        fill="#f39dbe"/>
+</svg>

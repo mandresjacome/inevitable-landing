@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Círculo de fondo -->
+  <circle cx="200" cy="200" r="180" fill="#75c9be"/>
+  
+  <!-- Avatar femenino estilizado -->
+  <circle cx="200" cy="160" r="60" fill="#f39dbe"/>
+  <path d="M 120 350 Q 200 280 280 350" fill="#f39dbe"/>
+  
+  <!-- Texto -->
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">
+    Anny
+  </text>
+</svg>
