@@ -43,7 +43,7 @@ export default function AboutUs() {
               src="/images/pareja.jpg"
               alt="Anny y Mario - Fundadores de Inevitable"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
