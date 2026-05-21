@@ -30,7 +30,7 @@ export default function DigitalTemplate() {
     {
       image: '/images/sobre.png',
       title: 'Plantilla del Sobre',
-      description: 'Diseño completo del empaque para el álbum',
+      description: 'Diseño del sobre para entregar las láminas',
     },
   ];
 
