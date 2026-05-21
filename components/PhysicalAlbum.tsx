@@ -1,6 +1,17 @@
+'use client';
+
 import { CONFIG, getWhatsAppLink } from '@/lib/constants';
 
 export default function PhysicalAlbum() {
+  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const whatsappUrl = getWhatsAppLink();
+    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+      (window as any).gtag_report_conversion(whatsappUrl);
+    } else {
+      window.location.href = whatsappUrl;
+    }
+  };
   const features = [
     {
       icon: '👨‍👩‍👧‍👦',
@@ -114,6 +125,7 @@ export default function PhysicalAlbum() {
           
           <a
             href={getWhatsAppLink()}
+            onClick={handleWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-10 py-5 bg-[#25D366] hover:bg-[#20BA5A] text-white text-lg font-bold rounded-full shadow-md hover:shadow-lg transition-all duration-300 w-full sm:w-auto justify-center"

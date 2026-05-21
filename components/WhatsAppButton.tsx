@@ -3,9 +3,20 @@
 import { getWhatsAppLink, CONFIG } from '@/lib/constants';
 
 export default function WhatsAppButton() {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const whatsappUrl = getWhatsAppLink();
+    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+      (window as any).gtag_report_conversion(whatsappUrl);
+    } else {
+      window.location.href = whatsappUrl;
+    }
+  };
+
   return (
     <a
       href={getWhatsAppLink()}
+      onClick={handleClick}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
