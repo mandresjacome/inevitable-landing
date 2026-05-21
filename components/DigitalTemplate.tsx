@@ -27,6 +27,11 @@ export default function DigitalTemplate() {
       title: 'Plantilla Base del Álbum en Canva',
       description: 'Screenshot del proyecto completo editable',
     },
+    {
+      image: '/images/sobre.png',
+      title: 'Plantilla del Sobre',
+      description: 'Diseño completo del empaque para el álbum',
+    },
   ];
 
   const nextSlide = () => {
@@ -39,7 +44,7 @@ export default function DigitalTemplate() {
   const includes = [
     {
       icon: '📦',
-      title: 'Sistema de plantillas completo del álbum (plantilla álbum + 3 plantillas base para 29 láminas)',
+      title: 'Sistema de plantillas completo del álbum (plantilla álbum + 3 plantillas base para 29 láminas + plantilla de sobre)',
       highlight: false,
     },
     {
@@ -54,7 +59,7 @@ export default function DigitalTemplate() {
     },
     {
       icon: '✨',
-      title: 'SÚPER BONO: Diseños del combo completo (ej: sobre, mug, cuadro, fixture, etc.) según se defina',
+      title: 'SÚPER BONO: Diseños del combo completo (ej: mug, cuadro, fixture, etc.) según se defina',
       highlight: true,
     },
   ];
