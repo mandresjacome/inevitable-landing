@@ -60,7 +60,7 @@ export default function AboutUs() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                El corazón de Inevitable. La perfeccionista detrás de cada diseño y detalle. Si algo no está perfecto, no sale del taller.
+                El corazón absoluto de Inevitable. Anny es la perfeccionista detrás de cada linea, corte y detalle. Tiene una regla de oro inquebrantable: si el diseño no la enamora a ella primero, simplemente no sale del taller.
               </p>
               <a
                 href="https://www.instagram.com/annybarajas05/"
@@ -85,7 +85,7 @@ export default function AboutUs() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Llegó a la vida de Inevitable y se enamoró del proyecto. Se encarga del marketing y de dar soporte a quienes compran las plantillas.
+                Llegó a la vida de Inevitable, se enamoró por del proyecto y decidió quedarse para hacer equipo. Él es quien está detrás de la pantalla apoyando en las redes sociales, la tecnología y asegurándose de que todo funcione perfecto en el mundo digital.
               </p>
               <a
                 href="https://www.instagram.com/mjacomeoficial/"
