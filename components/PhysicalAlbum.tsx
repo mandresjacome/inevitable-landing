@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { CONFIG, getWhatsAppLink } from '@/lib/constants';
 
 export default function PhysicalAlbum() {
@@ -49,30 +48,14 @@ export default function PhysicalAlbum() {
 
         {/* Grid de Contenido */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Columna de imagen (placeholder) */}
+          {/* Columna de imagen */}
           <div className="order-2 lg:order-1">
-            <div className="relative aspect-square bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl shadow-2xl overflow-hidden">
-              {/* Placeholder - Reemplazar con imagen real del álbum */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-gray-600 font-medium">
-                    Imagen del Álbum Físico
-                  </p>
-                  <p className="text-sm text-gray-500 mt-2">
-                    Reemplaza con foto real en /public/images/album-fisico.webp
-                  </p>
-                </div>
-              </div>
-              {/* Cuando tengas la imagen:
-              <Image
-                src="/images/album-fisico.webp"
-                alt="Álbum Físico del Día del Padre - Inevitable"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+            <div className="relative aspect-square bg-gradient-to-br from-green-100 to-green-50 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center p-4">
+              <img
+                src="/images/Album2.png"
+                alt="Álbum Físico del Día del Padre 2026 - Inevitable Papelería Creativa"
+                className="w-full h-full object-contain"
               />
-              */}
             </div>
           </div>
 

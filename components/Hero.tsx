@@ -69,30 +69,12 @@ export default function Hero() {
 
           {/* COLUMNA DERECHA - Imagen dominante */}
           <div className="order-1 lg:order-2 relative">
-            <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
-              {/* Placeholder - cuando tengas la foto real */}
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-100 via-green-50 to-amber-50 flex items-center justify-center p-8">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-gray-700 font-bold text-xl mb-2">
-                    Foto del Álbum Físico
-                  </p>
-                  <p className="text-sm text-gray-500">
-                    Aquí irá la foto real del álbum<br />dominando toda esta sección
-                  </p>
-                </div>
-              </div>
-              
-              {/* Cuando tengas la imagen real, reemplaza el div de arriba con esto:
-              <Image
-                src="/images/album-fisico-hero.webp"
-                alt="Álbum del Día del Padre - Inevitable"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
+            <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-green-100 to-green-50">
+              <img
+                src="/images/Album1.png"
+                alt="Álbum del Día del Padre 2026 - Inevitable"
+                className="w-full h-full object-cover"
               />
-              */}
             </div>
 
             {/* Badge circular flotante estilo "With love" */}

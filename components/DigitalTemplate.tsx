@@ -1,7 +1,41 @@
-import Image from 'next/image';
+'use client';
+
+import { useState } from 'react';
 import { CONFIG, getWhatsAppLink } from '@/lib/constants';
 
 export default function DigitalTemplate() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      image: '/images/laminabase1.png',
+      title: 'Plantilla Base de 22 Láminas Personalizadas',
+      description: 'Sistema completo para personalizar con fotos de familias',
+    },
+    {
+      image: '/images/laminabase2.png',
+      title: 'Plantilla Extra Sticker',
+      description: 'Lámina especial para sorprender',
+    },
+    {
+      image: '/images/laminabase3.png',
+      title: 'Plantillas Especiales',
+      description: 'Láminas holográficas y momentos históricos',
+    },
+    {
+      image: '/images/albumbase4.png',
+      title: 'Plantilla Base del Álbum en Canva',
+      description: 'Screenshot del proyecto completo editable',
+    },
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
   const includes = [
     {
       icon: '📦',
@@ -124,30 +158,73 @@ export default function DigitalTemplate() {
             </div>
           </div>
 
-          {/* Columna de imagen (placeholder) */}
+          {/* Columna de Carrusel */}
           <div className="order-first lg:order-last">
             <div className="relative aspect-square bg-gradient-to-br from-violet-100 to-pink-200 rounded-2xl shadow-2xl overflow-hidden">
-              {/* Placeholder - Reemplazar con mockup de la plantilla en Canva */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🎨</div>
-                  <p className="text-gray-600 font-medium">
-                    Mockup de Plantilla en Canva
-                  </p>
-                  <p className="text-sm text-gray-500 mt-2">
-                    Reemplaza con screenshot en /public/images/plantilla-digital.webp
-                  </p>
+              {/* Imagen del carrusel */}
+              <div className="relative w-full h-full">
+                <img
+                  src={slides[currentSlide].image}
+                  alt={slides[currentSlide].title}
+                  className="w-full h-full object-contain p-4"
+                />
+                
+                {/* Logo de Inevitable como marca de agua centrada */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <img
+                    src="/images/inevitable-logo.png"
+                    alt="Inevitable"
+                    className="w-48 h-48 sm:w-64 sm:h-64 object-contain opacity-20"
+                  />
                 </div>
               </div>
-              {/* Cuando tengas la imagen:
-              <Image
-                src="/images/plantilla-digital.webp"
-                alt="Plantilla Digital editable en Canva - Inevitable"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              */}
+
+              {/* Botones de navegación */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+                aria-label="Anterior"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              <button
+                onClick={nextSlide}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+                aria-label="Siguiente"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              {/* Indicadores de puntos */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {slides.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === currentSlide
+                        ? 'bg-white w-8'
+                        : 'bg-white/50 hover:bg-white/75'
+                    }`}
+                    aria-label={`Ir a imagen ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Descripción de la imagen actual */}
+            <div className="mt-6 text-center">
+              <h4 className="font-bold text-gray-900 text-lg mb-2">
+                {slides[currentSlide].title}
+              </h4>
+              <p className="text-sm text-gray-600">
+                {slides[currentSlide].description}
+              </p>
             </div>
           </div>
         </div>
