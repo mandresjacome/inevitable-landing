@@ -134,23 +134,25 @@ export default function RootLayout({
             gtag('config', '${CONFIG.googleAdsId}');
           `}
         </Script>
-
+      </head>
+      <body className="min-h-screen">
         {/* Structured Data (Schema.org) para SEO */}
-        <Script id="structured-data" type="application/ld+json" strategy="beforeInteractive">
-          {`
-            {
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
               "name": "Plantilla Álbum Día del Padre 2026 Mundial - Editable en Canva",
               "description": "Plantilla completa del álbum del Día del Padre temática Copa Mundial 2026. 100% editable en Canva gratuito. Incluye 29 láminas personalizables + diseños del combo completo + plantilla versión 2025 de regalo. Ideal para papelerías creativas y emprendedores.",
-              "image": "${siteUrl}/og-image.png",
+              "image": `${siteUrl}/og-image.png`,
               "brand": {
                 "@type": "Brand",
                 "name": "Inevitable"
               },
               "offers": {
                 "@type": "Offer",
-                "url": "${siteUrl}#plantilla-digital",
+                "url": `${siteUrl}#plantilla-digital`,
                 "priceCurrency": "USD",
                 "price": "6.00",
                 "availability": "https://schema.org/InStock",
@@ -165,11 +167,11 @@ export default function RootLayout({
                 "ratingValue": "5",
                 "reviewCount": "1"
               }
-            }
-          `}
-        </Script>
-      </head>
-      <body className="min-h-screen">{children}</body>
+            })
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
