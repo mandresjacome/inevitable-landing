@@ -22,6 +22,7 @@ export const CONFIG = {
   // Analytics
   metaPixelId: 'META_PIXEL_ID',             // ⚠️ Reemplazar con el Pixel ID de Meta/Facebook
   ga4MeasurementId: 'GA4_MEASUREMENT_ID',   // ⚠️ Reemplazar con el Measurement ID de Google Analytics 4
+  googleAdsId: 'AW-18179840552',            // ✅ Google Ads configurado
   
   // Zona de Entregas (solo para álbum físico)
   zonasEntrega: [
