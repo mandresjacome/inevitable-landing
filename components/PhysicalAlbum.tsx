@@ -47,10 +47,10 @@ export default function PhysicalAlbum() {
         </div>
 
         {/* Grid de Contenido */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
           {/* Columna de imagen */}
           <div className="order-2 lg:order-1">
-            <div className="relative aspect-square bg-gradient-to-br from-green-100 to-green-50 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center p-4">
+            <div className="relative aspect-square bg-gradient-to-br from-green-100 to-green-50 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center p-2 sm:p-4">
               <img
                 src="/images/Album2.png"
                 alt="Álbum Físico del Día del Padre 2026 - Inevitable Papelería Creativa"

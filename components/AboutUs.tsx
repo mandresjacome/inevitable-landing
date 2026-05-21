@@ -39,14 +39,14 @@ export default function AboutUs() {
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
           {/* Perfil Anny */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
-            <div className="relative h-80 bg-gradient-to-br from-brand-pink/20 to-brand-teal/20 flex items-center justify-center">
+            <div className="relative h-64 sm:h-80 bg-gradient-to-br from-brand-pink/20 to-brand-teal/20 flex items-center justify-center">
               <div className="text-center">
-                <div className="text-8xl mb-4">👩‍🎨</div>
-                <div className="text-brand-pink text-5xl font-bold mb-2">Anny</div>
+                <div className="text-6xl sm:text-8xl mb-4">👩‍🎨</div>
+                <div className="text-brand-pink text-3xl sm:text-5xl font-bold mb-2">Anny</div>
               </div>
             </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Anny Barajas</h3>
+            <div className="p-4 sm:p-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Anny Barajas</h3>
               <p className="text-brand-pink font-semibold mb-3">Soñadora, Fundadora y Creadora</p>
               <p className="text-gray-600 leading-relaxed mb-6">
                 El corazón de Inevitable. La perfeccionista detrás de cada diseño y detalle. Si algo no está perfecto, no sale del taller.
@@ -67,14 +67,14 @@ export default function AboutUs() {
 
           {/* Perfil Mario */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
-            <div className="relative h-80 bg-gradient-to-br from-brand-teal/20 to-brand-pink/20 flex items-center justify-center">
+            <div className="relative h-64 sm:h-80 bg-gradient-to-br from-brand-teal/20 to-brand-pink/20 flex items-center justify-center">
               <div className="text-center">
-                <div className="text-8xl mb-4">👨‍💼</div>
-                <div className="text-brand-teal text-5xl font-bold mb-2">Mario</div>
+                <div className="text-6xl sm:text-8xl mb-4">👨‍💼</div>
+                <div className="text-brand-teal text-3xl sm:text-5xl font-bold mb-2">Mario</div>
               </div>
             </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Mario Jácome</h3>
+            <div className="p-4 sm:p-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Mario Jácome</h3>
               <p className="text-brand-teal font-semibold mb-3">Marketing y Soporte al Emprendedor</p>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Llegó a la vida de Inevitable y se enamoró del proyecto. Se encarga del marketing y de dar soporte a quienes compran las plantillas.
