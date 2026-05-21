@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://inevitable-landing.vercel.app';
 
 export const metadata: Metadata = {
-  title: "Inevitable • Álbum del Día del Padre 2026",
-  description: "Sorprende a papá con el Álbum Oficial de tu Familia temática Copa Mundial 2026. Entregas en Bucaramanga. O compra la plantilla digital para tu emprendimiento. 29 láminas personalizadas.",
-  keywords: ["día del padre", "álbum personalizado", "mundial 2026", "regalo papá", "papelería creativa", "bucaramanga", "plantilla canva", "emprendimiento"],
+  title: "Plantilla Álbum Día del Padre 2026 Mundial - Editable Canva | Inevitable",
+  description: "Multiplica tus ventas este Día del Padre con nuestra plantilla de álbum del Mundial 2026. 100% editable en Canva gratuito, ideal para papelerías creativas y emprendedores. ¡Descarga inmediata por $6 USD! 29 láminas personalizables + diseños del combo completo.",
+  keywords: ["plantilla día del padre", "plantilla canva día del padre", "álbum mundial 2026 editable", "plantilla álbum papá", "diseño álbum fútbol", "papelería creativa", "plantillas para papelerías", "descargar plantilla álbum", "canva editable día del padre", "emprendimiento papelería", "mundial 2026", "plantilla día del padre colombia"],
   authors: [{ name: "Inevitable" }],
   creator: "Inevitable",
   publisher: "Inevitable",
@@ -29,22 +29,22 @@ export const metadata: Metadata = {
     locale: "es_CO",
     url: siteUrl,
     siteName: "Inevitable",
-    title: "Inevitable • Álbum del Día del Padre 2026",
-    description: "El regalo perfecto para papá: 22 láminas personalizadas con tu familia + momentos históricos del fútbol. Entregas en Bucaramanga y Área Metropolitana.",
+    title: "Plantilla Álbum Día del Padre 2026 - Editable en Canva | $6 USD",
+    description: "Empieza a vender HOY el álbum del Mundial 2026 para el Día del Padre. Plantilla 100% editable en Canva + diseños del combo completo. Descarga inmediata. Ideal para papelerías y emprendedores.",
     images: [
       {
-        url: "/og-image.jpg", // ⚠️ Crear esta imagen en /public/og-image.jpg (1200x630px)
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Álbum del Día del Padre 2026 - Inevitable",
+        alt: "Plantilla Álbum Día del Padre 2026 Mundial - Inevitable",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Inevitable • Álbum del Día del Padre 2026",
-    description: "Sorprende a papá con un álbum personalizado con tu familia. 29 láminas únicas.",
-    images: ["/og-image.jpg"],
+    title: "Plantilla Día del Padre 2026 - Mundial • Canva Editable",
+    description: "Multiplica tus ventas: Plantilla completa + combo por solo $6 USD. Descarga inmediata.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -120,6 +120,40 @@ export default function RootLayout({
             </Script>
           </>
         )}
+
+        {/* Structured Data (Schema.org) para SEO */}
+        <Script id="structured-data" type="application/ld+json" strategy="beforeInteractive">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Plantilla Álbum Día del Padre 2026 Mundial - Editable en Canva",
+              "description": "Plantilla completa del álbum del Día del Padre temática Copa Mundial 2026. 100% editable en Canva gratuito. Incluye 29 láminas personalizables + diseños del combo completo + plantilla versión 2025 de regalo. Ideal para papelerías creativas y emprendedores.",
+              "image": "${siteUrl}/og-image.png",
+              "brand": {
+                "@type": "Brand",
+                "name": "Inevitable"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "${siteUrl}#plantilla-digital",
+                "priceCurrency": "USD",
+                "price": "6.00",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-06-21",
+                "seller": {
+                  "@type": "Organization",
+                  "name": "Inevitable - Papelería Creativa"
+                }
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "1"
+              }
+            }
+          `}
+        </Script>
       </head>
       <body className="min-h-screen">{children}</body>
     </html>

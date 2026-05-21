@@ -52,8 +52,8 @@ export default function PhysicalAlbum() {
           <div className="order-2 lg:order-1">
             <div className="relative aspect-square bg-gradient-to-br from-green-100 to-green-50 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center p-2 sm:p-4">
               <img
-                src="/images/Album2.png"
-                alt="Álbum Físico del Día del Padre 2026 - Inevitable Papelería Creativa"
+                src="/images/album-fisico-dia-del-padre-futbol-2026.png"
+                alt="Álbum físico Día del Padre 2026 temática fútbol Mundial - 22 láminas personalizadas familia"
                 className="w-full h-full object-contain"
               />
             </div>

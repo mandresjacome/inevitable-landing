@@ -1,4 +1,4 @@
-import { CONFIG, hasPlaceholders } from '@/lib/constants';
+import { CONFIG } from '@/lib/constants';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -78,16 +78,6 @@ export default function Footer() {
             </p>
           </div>
         </div>
-
-        {/* Nota para desarrolladores */}
-        {hasPlaceholders() && (
-          <div className="mt-8 bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
-            <p className="text-yellow-500 text-sm text-center">
-              ⚠️ <strong>DEV MODE:</strong> Algunos placeholders aún no han sido reemplazados. 
-              Revisa <code className="bg-black/30 px-2 py-1 rounded">lib/constants.ts</code> antes del deploy.
-            </p>
-          </div>
-        )}
       </div>
     </footer>
   );

@@ -8,27 +8,27 @@ export default function DigitalTemplate() {
 
   const slides = [
     {
-      image: '/images/laminabase1.png',
+      image: '/images/plantilla-laminas-personalizadas-canva-dia-del-padre.png',
       title: 'Plantilla Base de 22 Láminas Personalizadas',
       description: 'Sistema completo para personalizar con fotos de familias',
     },
     {
-      image: '/images/laminabase2.png',
+      image: '/images/plantilla-extra-sticker-album-papa.png',
       title: 'Plantilla Extra Sticker',
       description: 'Lámina especial para sorprender',
     },
     {
-      image: '/images/laminabase3.png',
+      image: '/images/plantilla-laminas-holograficas-mundial-2026.png',
       title: 'Plantillas Especiales',
       description: 'Láminas holográficas y momentos históricos',
     },
     {
-      image: '/images/albumbase4.png',
+      image: '/images/plantilla-album-canva-editable-dia-del-padre.png',
       title: 'Plantilla Base del Álbum en Canva',
       description: 'Screenshot del proyecto completo editable',
     },
     {
-      image: '/images/sobre.png',
+      image: '/images/plantilla-sobre-album-papa-mundial.png',
       title: 'Plantilla del Sobre',
       description: 'Diseño del sobre para entregar las láminas',
     },

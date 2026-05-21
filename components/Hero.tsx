@@ -71,8 +71,8 @@ export default function Hero() {
           <div className="order-1 lg:order-2 relative">
             <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-green-100 to-green-50">
               <img
-                src="/images/Album1.png"
-                alt="Álbum del Día del Padre 2026 - Inevitable"
+                src="/images/album-dia-del-padre-2026-mundial-personalizado.png"
+                alt="Álbum personalizado Día del Padre 2026 temática Mundial - 29 láminas con fotos de familia"
                 className="w-full h-full object-cover"
               />
             </div>
