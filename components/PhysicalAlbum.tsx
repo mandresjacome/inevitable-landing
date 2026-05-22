@@ -36,7 +36,7 @@ export default function PhysicalAlbum() {
   ];
 
   return (
-    <section id="album-fisico" className="py-16 sm:py-24 bg-white">
+    <section id="album-fisico" className="py-16 sm:py-24 bg-[#F5F3F0]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header limpio */}

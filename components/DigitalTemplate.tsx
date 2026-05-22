@@ -98,7 +98,7 @@ export default function DigitalTemplate() {
   ];
 
   return (
-    <section id="plantilla-digital" className="py-16 sm:py-24 bg-[#F5F3F0]">
+    <section id="plantilla-digital" className="py-16 sm:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header limpio */}
