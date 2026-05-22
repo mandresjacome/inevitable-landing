@@ -7,6 +7,7 @@ export const CONFIG = {
   whatsappMessageAlbum: encodeURIComponent('Hola, quiero pedir el Álbum Físico del Día del Padre 🏆'),
   whatsappMessagePlantilla: encodeURIComponent('Hola, quiero comprar el Paquete de Diseños Digital ($6 USD)'),
   whatsappMessageSoporte: encodeURIComponent('Hola, tengo una duda sobre la plantilla de Canva'),
+  whatsappMessageGeneral: encodeURIComponent('Hola, me interesa conocer más sobre los productos del Día del Padre 2026'),
   
   // Precios
   precioAlbum: 'Por definir',
@@ -35,7 +36,7 @@ export const CONFIG = {
 
 // Helper para generar links de WhatsApp
 export const getWhatsAppLink = (message?: string) => {
-  const encodedMessage = message || CONFIG.whatsappMessageAlbum;
+  const encodedMessage = message || CONFIG.whatsappMessageGeneral;
   return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMessage}`;
 };
 

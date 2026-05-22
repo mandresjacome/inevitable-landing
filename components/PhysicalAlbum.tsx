@@ -5,7 +5,7 @@ import { CONFIG, getWhatsAppLink } from '@/lib/constants';
 export default function PhysicalAlbum() {
   const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const whatsappUrl = getWhatsAppLink();
+    const whatsappUrl = getWhatsAppLink(CONFIG.whatsappMessageAlbum);
     if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
       (window as any).gtag_report_conversion(whatsappUrl);
     } else {
@@ -124,7 +124,7 @@ export default function PhysicalAlbum() {
           </div>
           
           <a
-            href={getWhatsAppLink()}
+            href={getWhatsAppLink(CONFIG.whatsappMessageAlbum)}
             onClick={handleWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"
