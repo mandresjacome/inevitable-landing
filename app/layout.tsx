@@ -139,17 +139,22 @@ export default function RootLayout({
         <Script id="google-ads-conversion" strategy="afterInteractive">
           {`
             window.gtag_report_conversion = function(url) {
-              var callback = function () {
+              // Disparar el evento de conversión
+              if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-18179840552/zpG3CMTnl7EcEKi06dxD',
+                  'value': 1.0,
+                  'currency': 'COP'
+                });
+              }
+              
+              // Dar tiempo a Google Ads para registrar (300ms es suficiente)
+              setTimeout(function() {
                 if (typeof(url) != 'undefined') {
                   window.location = url;
                 }
-              };
-              gtag('event', 'conversion', {
-                  'send_to': 'AW-18179840552/zpG3CMTnl7EcEKi06dxD',
-                  'value': 1.0,
-                  'currency': 'COP',
-                  'event_callback': callback
-              });
+              }, 300);
+              
               return false;
             }
           `}
