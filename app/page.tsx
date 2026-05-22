@@ -12,8 +12,8 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <PhysicalAlbum />
       <DigitalTemplate />
+      <PhysicalAlbum />
       <AboutUs />
       <FAQ />
       <Footer />

@@ -39,14 +39,14 @@ export default function Hero() {
                 href="#album-fisico"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#15803D] hover:bg-[#166534] text-white font-bold rounded-full shadow-md hover:shadow-lg transition-all duration-300 text-base"
               >
-                Quiero el Álbum
+                Quiero el Álbum Físico
               </a>
               
               <a
                 href="#plantilla-digital"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-full shadow-md hover:shadow-lg transition-all duration-300 border-2 border-gray-900 text-base"
               >
-                Soy Emprendedor
+                Quiero la Plantilla Digital
               </a>
             </div>
 
