@@ -74,8 +74,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <head>
-        {/* Meta Pixel (Facebook) */}
-        {!CONFIG.metaPixelId.includes('META_PIXEL_ID') && (
+        {/* Meta Pixel (Facebook) - DESACTIVADO: Campaña finalizada */}
+        {/* {!CONFIG.metaPixelId.includes('META_PIXEL_ID') && (
           <>
             <Script id="meta-pixel" strategy="afterInteractive">
               {`
@@ -101,10 +101,10 @@ export default function RootLayout({
               />
             </noscript>
           </>
-        )}
+        )} */
 
-        {/* Google Analytics 4 */}
-        {!CONFIG.ga4MeasurementId.includes('GA4_MEASUREMENT_ID') && (
+        {/* Google Analytics 4 - DESACTIVADO: Campaña finalizada */}
+        {/* {!CONFIG.ga4MeasurementId.includes('GA4_MEASUREMENT_ID') && (
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${CONFIG.ga4MeasurementId}`}
@@ -119,10 +119,10 @@ export default function RootLayout({
               `}
             </Script>
           </>
-        )}
+        )} */
 
-        {/* Google Ads */}
-        <Script
+        {/* Google Ads - DESACTIVADO: Campaña finalizada */}
+        {/* <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${CONFIG.googleAdsId}`}
           strategy="afterInteractive"
         />
@@ -133,10 +133,10 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', '${CONFIG.googleAdsId}');
           `}
-        </Script>
+        </Script> */
         
-        {/* Google Ads Conversion Tracking */}
-        <Script id="google-ads-conversion" strategy="afterInteractive">
+        {/* Google Ads Conversion Tracking - DESACTIVADO: Campaña finalizada */}
+        {/* <Script id="google-ads-conversion" strategy="afterInteractive">
           {`
             window.gtag_report_conversion = function(url) {
               // Disparar el evento de conversión
@@ -158,7 +158,7 @@ export default function RootLayout({
               return false;
             }
           `}
-        </Script>
+        </Script> */
       </head>
       <body className="min-h-screen">
         {/* Structured Data (Schema.org) para SEO */}
