@@ -101,7 +101,7 @@ export default function RootLayout({
               />
             </noscript>
           </>
-        )} */
+        )} */}
 
         {/* Google Analytics 4 - DESACTIVADO: Campaña finalizada */}
         {/* {!CONFIG.ga4MeasurementId.includes('GA4_MEASUREMENT_ID') && (
@@ -119,7 +119,7 @@ export default function RootLayout({
               `}
             </Script>
           </>
-        )} */
+        )} */}
 
         {/* Google Ads - DESACTIVADO: Campaña finalizada */}
         {/* <Script
@@ -133,7 +133,7 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', '${CONFIG.googleAdsId}');
           `}
-        </Script> */
+        </Script> */}
         
         {/* Google Ads Conversion Tracking - DESACTIVADO: Campaña finalizada */}
         {/* <Script id="google-ads-conversion" strategy="afterInteractive">
@@ -158,7 +158,7 @@ export default function RootLayout({
               return false;
             }
           `}
-        </Script> */
+        </Script> */}
       </head>
       <body className="min-h-screen">
         {/* Structured Data (Schema.org) para SEO */}
